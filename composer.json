@@ -1,0 +1,31 @@
+{
+    "name": "goldfinch/bugtracker",
+    "description": "",
+    "type": "silverstripe-vendormodule",
+    "keywords": [
+        "silverstripe"
+    ],
+    "license": "MIT",
+    "authors": [{
+        "name": "Artem Karasev"
+    }],
+    "require": {
+        "php": ">=8.0",
+        "silverstripe/framework": "^5.0",
+        "silverstripe/admin": "^2.0",
+        "lekoala/silverstripe-encrypt": "dev-ss5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Goldfinch\\BugTracker\\": "src/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/goldfinch/silverstripe-jsontext"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
