@@ -5,3 +5,7 @@ Name: goldfinch-bugtracker
 SilverStripe\Control\RequestHandler:
   extensions:
     - Goldfinch\BugTracker\Extensions\BugHandlerExtension
+
+SilverStripe\SiteConfig\SiteConfig:
+  extensions:
+    - Goldfinch\BugTracker\Extensions\SiteConfigExtension
