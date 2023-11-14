@@ -13,7 +13,7 @@
         "php": ">=8.0",
         "silverstripe/framework": "^5.0",
         "silverstripe/admin": "^2.0",
-        "lekoala/silverstripe-encrypt": "dev-ss5",
+        "lekoala/silverstripe-encrypt": "dev-master",
         "rollbar/rollbar": "^4.0"
     },
     "autoload": {
