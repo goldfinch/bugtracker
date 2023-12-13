@@ -9,3 +9,14 @@ SilverStripe\Control\RequestHandler:
 SilverStripe\SiteConfig\SiteConfig:
   extensions:
     - Goldfinch\BugTracker\Extensions\SiteConfigExtension
+
+
+---
+Name: goldfinch-bugtracker-icon
+Only:
+  moduleexists: 'goldfinch/enchantment'
+---
+
+Goldfinch\BugTracker\Admin\BugTrackerAdmin:
+  icon: 'bi-bug-fill'
+

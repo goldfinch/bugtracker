@@ -23,7 +23,7 @@ class BugTrackerAdmin extends ModelAdmin
 
     private static $menu_priority = 0;
 
-    private static $menu_icon_class = 'bi-bug-fill';
+    private static $menu_icon_class = 'font-icon-attention-1';
 
     public $showImportForm = true;
 
