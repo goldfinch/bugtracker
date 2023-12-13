@@ -4,7 +4,7 @@ namespace Goldfinch\BugTracker\Models;
 
 use SilverStripe\ORM\DataObject;
 use SilverStripe\Security\Permission;
-use Goldfinch\JSONEditor\ORM\FieldType\DBJSONText;
+use PhpTek\JSONText\ORM\FieldType\JSONText;
 
 class Bug extends DataObject
 {
@@ -19,7 +19,7 @@ class Bug extends DataObject
     private static $cascade_duplicates = [];
 
     private static $db = [
-        'Data' => DBJSONText::class,
+        'Data' => JSONText::class,
     ];
 
     private static $casting = [];
