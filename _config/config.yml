@@ -15,4 +15,4 @@ Only:
   moduleexists: "goldfinch/enchantment"
 ---
 Goldfinch\BugTracker\Admin\BugTrackerAdmin:
-  icon: "bi-bug-fill"
+  menu_icon_class: "bi-bug-fill"
