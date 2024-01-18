@@ -2,11 +2,11 @@
 
 namespace Goldfinch\BugTracker\Extensions;
 
-use Goldfinch\BugTracker\Models\Bug;
 use SilverStripe\Core\Extension;
+use SilverStripe\Core\Environment;
+use Goldfinch\BugTracker\Models\Bug;
 use SilverStripe\Control\HTTPRequest;
 use SilverStripe\Security\SecurityToken;
-use SilverStripe\Core\Environment;
 
 class BugHandlerExtension extends Extension
 {

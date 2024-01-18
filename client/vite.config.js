@@ -1,10 +1,9 @@
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 import autoprefixer from "autoprefixer";
-import { viteStaticCopy } from 'vite-plugin-static-copy'
 import fs from 'fs';
 
-const host = 'silverstripe-starter.lh';
+const host = 'silverstripe.lh';
 
 export default defineConfig({
 
@@ -17,18 +16,6 @@ export default defineConfig({
       },
   },
 
-  // build: {
-  //   emptyOutDir: true,
-  //   outDir: '../dist',
-  //   rollupOptions: {
-  //     output: {
-  //       entryFileNames: `dashpanel/assets/[name].js`,
-  //       chunkFileNames: `dashpanel/assets/[name].js`,
-  //       assetFileNames: `dashpanel/assets/[name].[ext]`
-  //     }
-  //   }
-  // },
-
   plugins: [
       laravel({
           input: [
@@ -37,15 +24,6 @@ export default defineConfig({
           ],
           refresh: true,
       }),
-
-      viteStaticCopy({
-        targets: [
-          // {
-          //   src: './extra/images/*',
-          //   dest: '../dist/dashpanel/assets/extra/images',
-          // },
-        ],
-      })
   ],
 
     css: {

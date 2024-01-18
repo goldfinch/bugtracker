@@ -2,8 +2,8 @@
 
 namespace Goldfinch\BugTracker\Admin;
 
-use Goldfinch\BugTracker\Models\Bug;
 use SilverStripe\Admin\ModelAdmin;
+use Goldfinch\BugTracker\Models\Bug;
 use SilverStripe\Forms\GridField\GridFieldConfig;
 use SilverStripe\Forms\GridField\GridFieldExportButton;
 use SilverStripe\Forms\GridField\GridFieldImportButton;
@@ -31,24 +31,6 @@ class BugTrackerAdmin extends ModelAdmin
 
     private static $page_length = 30;
 
-    public function getList()
-    {
-        $list =  parent::getList();
-
-        // ..
-
-        return $list;
-    }
-
-    public function getSearchContext()
-    {
-        $context = parent::getSearchContext();
-
-        // ..
-
-        return $context;
-    }
-
     protected function getGridFieldConfig(): GridFieldConfig
     {
         $config = parent::getGridFieldConfig();
@@ -58,14 +40,5 @@ class BugTrackerAdmin extends ModelAdmin
         $config->removeComponentsByType(GridFieldImportButton::class);
 
         return $config;
-    }
-
-    public function getEditForm($id = null, $fields = null)
-    {
-        $form = parent::getEditForm($id, $fields);
-
-        // ..
-
-        return $form;
     }
 }

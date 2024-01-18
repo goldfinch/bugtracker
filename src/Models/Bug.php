@@ -3,7 +3,6 @@
 namespace Goldfinch\BugTracker\Models;
 
 use SilverStripe\ORM\DataObject;
-use SilverStripe\Security\Permission;
 use PhpTek\JSONText\ORM\FieldType\JSONText;
 
 class Bug extends DataObject
@@ -42,58 +41,6 @@ class Bug extends DataObject
     private static $field_labels = [];
 
     private static $summary_fields = [];
-
-    public function validate()
-    {
-        $result = parent::validate();
-
-        // $result->addError('Error message');
-
-        return $result;
-    }
-
-    public function onBeforeWrite()
-    {
-        // ..
-
-        parent::onBeforeWrite();
-    }
-
-    public function onBeforeDelete()
-    {
-        // ..
-
-        parent::onBeforeDelete();
-    }
-
-    public function getCMSFields()
-    {
-        $fields = parent::getCMSFields();
-
-        //
-
-        return $fields;
-    }
-
-    public function canView($member = null)
-    {
-        return Permission::check('ADMIN');
-    }
-
-    public function canEdit($member = null)
-    {
-        return false; // Permission::check('CMS_ACCESS_Company\Website\MyAdmin', 'any', $member);
-    }
-
-    public function canDelete($member = null)
-    {
-        return false; // Permission::check('CMS_ACCESS_Company\Website\MyAdmin', 'any', $member);
-    }
-
-    public function canCreate($member = null, $context = [])
-    {
-        return false; // Permission::check('CMS_ACCESS_Company\Website\MyAdmin', 'any', $member);
-    }
 
     public function requestData()
     {
