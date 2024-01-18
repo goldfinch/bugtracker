@@ -8,6 +8,7 @@ use SilverStripe\Forms\GridField\GridFieldConfig;
 use SilverStripe\Forms\GridField\GridFieldExportButton;
 use SilverStripe\Forms\GridField\GridFieldImportButton;
 use SilverStripe\Forms\GridField\GridFieldPrintButton;
+use SilverStripe\Forms\GridField\GridFieldAddNewButton;
 
 class BugTrackerAdmin extends ModelAdmin
 {
@@ -38,6 +39,7 @@ class BugTrackerAdmin extends ModelAdmin
         $config->removeComponentsByType(GridFieldExportButton::class);
         $config->removeComponentsByType(GridFieldPrintButton::class);
         $config->removeComponentsByType(GridFieldImportButton::class);
+        $config->removeComponentsByType(GridFieldAddNewButton::class);
 
         return $config;
     }
