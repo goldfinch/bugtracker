@@ -1,7 +1,6 @@
 ---
 Name: goldfinch-bugtracker
 ---
-
 SilverStripe\Control\RequestHandler:
   extensions:
     - Goldfinch\BugTracker\Extensions\BugHandlerExtension
@@ -10,13 +9,10 @@ SilverStripe\SiteConfig\SiteConfig:
   extensions:
     - Goldfinch\BugTracker\Extensions\SiteConfigExtension
 
-
 ---
 Name: goldfinch-bugtracker-icon
 Only:
-  moduleexists: 'goldfinch/enchantment'
+  moduleexists: "goldfinch/enchantment"
 ---
-
 Goldfinch\BugTracker\Admin\BugTrackerAdmin:
-  icon: 'bi-bug-fill'
-
+  icon: "bi-bug-fill"

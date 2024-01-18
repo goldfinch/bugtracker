@@ -6,7 +6,6 @@
 // });
 // FancyTrack.track("My Error");
 
-
 // import 'js/jslogger.js';
 // JSLogger({
 //     url: '//your-site.com/logger.php'
